@@ -18,14 +18,18 @@
     "start-ios": "node ./build/start.js --platform ios",
     "start-ios:connected": "scjss-verify-setup && node ./build/start.js --platform ios --appMode connected",
     "start-ios:connected-tunnel": "scjss-verify-setup && node ./build/start.js --platform ios --appMode connected-tunnel",
-    "lint": "eslint --fix ./src/**/*.js ./sitecore/definitions/**/*.js ./**/*.js"
+    "lint": "eslint --fix ./src/**/*.js ./sitecore/definitions/**/*.js ./**/*.js",
+    "devmenu": "adb shell input keyevent 82"
   },
   "dependencies": {
     "@sitecore-jss/sitecore-jss-react-native": "^9.0.5",
+    "babel-preset-env": "^1.7.0",
+    "native-base": "^2.8.0",
     "prop-types": "^15.6.0",
-    "react": "16.2.0",
+    "react": "^16.4",
     "react-native": "0.54.0",
-    "react-native-deck-swiper": "^1.5.18"
+    "react-native-easy-grid": "^0.2.0",
+    "react-native-vector-icons": "^5.0.0"
   },
   "private": true,
   "devDependencies": {

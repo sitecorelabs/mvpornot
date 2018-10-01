@@ -1,7 +1,7 @@
-import Welcome from './components/Welcome';
+import { Swiper } from './components/Swiper';
 
 const components = new Map();
-components.set('Welcome', Welcome);
+components.set('Swiper', Swiper);
 
 const componentFactory = (componentName) => components.get(componentName);
 

@@ -28,6 +28,7 @@
         "optionalDependencies": true
       }
     ],
+    "linebreak-style": "off",
     "arrow-body-style": ["warn", "as-needed"],
     "arrow-parens": ["error", "always"],
     "no-unused-vars": [
