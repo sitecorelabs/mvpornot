@@ -40,6 +40,7 @@ const resolveEnvVars = (appMode) => {
     envVars.APP_STATIC_ASSETS = './assets/images.connected';
     envVars.__SC_API_HOST__ = jssConfig.sitecore.layoutServiceHost;
     envVars.__SC_API_KEY__ = jssConfig.sitecore.apiKey;
+    envVars.__CONNECTED__ = true;
   }
 
   if (appMode === 'connected') {

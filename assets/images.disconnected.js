@@ -7,7 +7,7 @@ const images = {
   '/assets/img/sitecore-mvp-logo-small.png': require('./img/sitecore-mvp-logo-small.png'),
   '/data/media/img/mvp/thomas-stern.jpg': require('../data/media/img/mvp/thomas-stern.jpg'),
   '/data/media/img/mvp/dave-peterson.jpg': require('../data/media/img/mvp/dave-peterson.jpg'),
-  '/data/media/img/mvp/mike-reynolds.jpg': require('../data/media/img/mvp/mike-reynolds.png'),
+  '/data/media/img/mvp/mike-reynolds.png': require('../data/media/img/mvp/mike-reynolds.png'),
   '/data/media/img/mvp/corey-smith.jpg': require('../data/media/img/mvp/corey-smith.jpg'),
   '/data/media/img/mvp/zachary-kniebel.jpg': require('../data/media/img/mvp/zachary-kniebel.jpg'),
 };

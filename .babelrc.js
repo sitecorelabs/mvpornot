@@ -19,6 +19,7 @@ module.exports = {
         __SC_API_KEY__: process.env.__SC_API_KEY__,
         __TRANSLATION_PATH__: process.env.__TRANSLATION_PATH__,
         __SC_TUNNEL_HOST__: process.env.__SC_TUNNEL_HOST__,
+        __CONNECTED__: process.env.__CONNECTED__,
       },
     ],
   ],

@@ -11,11 +11,50 @@
               "template": "Swiper-Item-Template",
               "fields": {
                 "name": {
-                  "value": "Thomas Stern"
+                  "value": "Bobby Hack"
                 },
                 "image": {
                   "value": {
-                    "src": "/data/media/img/mvp/thomas-stern.jpg"
+                    "src": "/data/media/img/mvp/bobby-hack.jpg"
+                  }
+                }
+              }
+            },
+            {
+              "template": "Swiper-Item-Template",
+              "fields": {
+                "name": {
+                  "value": "Una and Martina"
+                },
+                "image": {
+                  "value": {
+                    "src": "/data/media/img/mvp/una-and-martina-01.jpg"
+                  }
+                }
+              }
+            },
+            {
+              "template": "Swiper-Item-Template",
+              "fields": {
+                "name": {
+                  "value": "Chirag Patel"
+                },
+                "image": {
+                  "value": {
+                    "src": "/data/media/img/mvp/chirag-patel.jpg"
+                  }
+                }
+              }
+            },
+            {
+              "template": "Swiper-Item-Template",
+              "fields": {
+                "name": {
+                  "value": "Corey Smith"
+                },
+                "image": {
+                  "value": {
+                    "src": "/data/media/img/mvp/corey-smith.jpg"
                   }
                 }
               }
@@ -36,19 +75,39 @@
             {
               "template": "Swiper-Item-Template",
               "fields": {
+                "name": {
+                  "value": "Thomas Stern"
+                },
+                "image": {
+                  "value": {
+                    "src": "/data/media/img/mvp/thomas-stern.jpg"
+                  }
+                }
+              }
+            },            
+            {
+              "template": "Swiper-Item-Template",
+              "fields": {
                 "name": { "value": "Mike Reynolds" },
-                "image": { "value": { "src": "/data/media/img/mvp/mike-reynolds.jpg" } }
+                "image": { "value": { "src": "/data/media/img/mvp/mike-reynolds.png" } }
+              }
+            },            
+            {
+              "template": "Swiper-Item-Template",
+              "fields": {
+                "name": { "value": "Zachary Kniebel" },
+                "image": { "value": { "src": "/data/media/img/mvp/zachary-kniebel.jpg" } }
               }
             },
             {
               "template": "Swiper-Item-Template",
               "fields": {
                 "name": {
-                  "value": "Corey Smith"
+                  "value": "George Chang"
                 },
                 "image": {
                   "value": {
-                    "src": "/data/media/img/mvp/corey-smith.jpg"
+                    "src": "/data/media/img/mvp/george-chang.jpg"
                   }
                 }
               }
@@ -56,12 +115,73 @@
             {
               "template": "Swiper-Item-Template",
               "fields": {
-                "name": { "value": "Zachary Kniebel" },
-                "image": { "value": { "src": "/data/media/img/mvp/zachary-kniebel.jpg" } }
+                "name": {
+                  "value": "JFL"
+                },
+                "image": {
+                  "value": {
+                    "src": "/data/media/img/mvp/jf-lheureux.jpg"
+                  }
+                }
+              }
+            },
+            {
+              "template": "Swiper-Item-Template",
+              "fields": {
+                "name": {
+                  "value": "John West"
+                },
+                "image": {
+                  "value": {
+                    "src": "/data/media/img/mvp/john-west-02.jpg"
+                  }
+                }
+              }
+            },
+            {
+              "template": "Swiper-Item-Template",
+              "fields": {
+                "name": {
+                  "value": "Kris Verheire"
+                },
+                "image": {
+                  "value": {
+                    "src": "/data/media/img/mvp/kris-verheire.png"
+                  }
+                }
+              }
+            },
+            {
+              "template": "Swiper-Item-Template",
+              "fields": {
+                "name": {
+                  "value": "Mike Edwards"
+                },
+                "image": {
+                  "value": {
+                    "src": "/data/media/img/mvp/mike-edwards.jpg"
+                  }
+                }
+              }
+            },
+            {
+              "template": "Swiper-Item-Template",
+              "fields": {
+                "name": {
+                  "value": "Rene Naplava"
+                },
+                "image": {
+                  "value": {
+                    "src": "/data/media/img/mvp/rene-naplava.jpg"
+                  }
+                }
               }
             }
           ]
         }
+      },
+      {
+        "componentName": "Results"
       }
     ]
   }

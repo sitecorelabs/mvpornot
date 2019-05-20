@@ -4,6 +4,7 @@ import { StyleSheet, View, Text as NativeText } from 'react-native';
 import { Image, Text } from '@sitecore-jss/sitecore-jss-react-native';
 import { DeckSwiper, Card, CardItem } from 'native-base';
 import { Grid, Row } from 'react-native-easy-grid';
+import deepEqual from 'fast-deep-equal';
 
 const styles = StyleSheet.create({
   container: {
@@ -27,45 +28,38 @@ const styles = StyleSheet.create({
   },
   cardText: {
     textAlign: 'center',
-    fontSize: 50,
+    fontSize: 40,
     backgroundColor: 'transparent',
     height: '100%',
-  },
-  results: {
-    width: '100%',
-    backgroundColor: 'white',
-  },
+  }
 });
 
 export class Swiper extends React.Component {
   constructor() {
     super();
     this.state = {
-      yes: [],
-      no: [],
+      modalVisible: false,
     };
 
-    this.swipeRight = this.swipeRight.bind(this);
-    this.swipeLeft = this.swipeLeft.bind(this);
+    this.handleSwipeLeft = this.handleSwipeLeft.bind(this);
+    this.handleSwipeRight = this.handleSwipeRight.bind(this);
   }
 
-  swipeRight(card) {
-    this.setState((prevState) => {
-      return { yes: [...prevState.yes, card] };
-    });
+  handleSwipeLeft(card) {
+    this.setState({ modalVisible: true });    
+    this.props.onSwipeLeft(card);
   }
 
-  swipeLeft(card) {
-    this.setState((prevState) => {
-      return { no: [...prevState.no, card] };
-    });
+  handleSwipeRight(card) {
+    this.setState({ modalVisible: true });    
+    this.props.onSwipeRight(card);
   }
 
   render() {
     const { mvps } = this.props.fields;
 
     return (
-      <Grid>
+      
         <Row>
           <View style={styles.swiper}>
             <DeckSwiper
@@ -73,36 +67,31 @@ export class Swiper extends React.Component {
               renderItem={(card) => {
                 return (
                   <Card style={{ elevation: 3 }}>
-                    <CardItem>
+                    <CardItem style={{ textAlign: 'center' }}>
                       <Text style={styles.cardText} field={card.fields.name} />
                     </CardItem>
                     <CardItem cardBody>
-                      <Image style={{ height: 300, flex: 1 }} media={card.fields.image} />
+                      <Image style={{ height: 350, flex: 1, paddingTop: 10 }} media={card.fields.image} />
                     </CardItem>
                   </Card>
                 );
               }}
               onSwipeRight={(card) => {
-                this.swipeRight(card);
+                this.handleSwipeRight(card);
               }}
               onSwipeLeft={(card) => {
-                this.swipeLeft(card);
+                this.handleSwipeLeft(card);
               }}
             />
           </View>
         </Row>
-        <Row style={{ height: 80 }}>
-          <View style={styles.results}>
-            <NativeText>Yes: {this.state.yes.length}</NativeText>
-            <NativeText>No: {this.state.no.length}</NativeText>
-          </View>
-        </Row>
-      </Grid>
     );
   }
 }
 
 Swiper.propTypes = {
+  onSwipeLeft: PropTypes.func,
+  onSwipeRight: PropTypes.func,
   fields: PropTypes.shape({
     title: PropTypes.object,
     text: PropTypes.object,

@@ -3,7 +3,7 @@
   "version": "9.0.6",
   "description": "A basic React Native app utilizing Sitecore JavaScript Services",
   "config": {
-    "appName": "JssReactNative",
+    "appName": "MvpOrNot",
     "rootPlaceholders": [
       "jss-main"
     ],
@@ -24,11 +24,14 @@
   "dependencies": {
     "@sitecore-jss/sitecore-jss-react-native": "^9.0.5",
     "babel-preset-env": "^1.7.0",
+    "fast-deep-equal": "^2.0.1",
     "native-base": "^2.8.0",
     "prop-types": "^15.6.0",
     "react": "^16.4",
     "react-native": "0.54.0",
     "react-native-easy-grid": "^0.2.0",
+    "react-native-modal": "^6.5.0",
+    "react-native-sound": "^0.10.9",
     "react-native-vector-icons": "^5.0.0"
   },
   "private": true,

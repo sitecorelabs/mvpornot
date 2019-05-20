@@ -1,0 +1,9 @@
+{
+  "sitecore": {
+    "instancePath": "C:\\DEV\\SC\\Symposium2018\\Sites\\mvpornot.local.net",
+    "apiKey": "{3FF82A74-910F-43B1-B206-14252124F3E6}",
+    "deploySecret": "xqfh9iszcgec73znz1h76hn4zijqsz95c2ua19gfv3bo",
+    "deployUrl": "http://mvpornot.local.net/sitecore/api/jss/import",
+    "layoutServiceHost": "http://mvpornot.local.net"
+  }
+}
